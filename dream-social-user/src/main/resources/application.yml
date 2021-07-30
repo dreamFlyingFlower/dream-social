@@ -1,0 +1,25 @@
+server:
+  port: 50001
+  
+spring:
+  application:
+    name: dream-social-user
+  cloud:
+    nacos:
+      discovery:
+        # nacos服务地址
+        server-addr: 127.0.0.1:8848
+        # 给当前的服务命名
+        service: ${spring.application.name}
+        # 设置服务所处的分组
+#        group: DEFAULT_GROUP
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+mybatis:
+  mapper-locations:
+  - classpath:mappers/*.xml
