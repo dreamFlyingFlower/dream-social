@@ -56,7 +56,15 @@
 	</dependencyManagement>
 	
 	<modules>
+		<module>dream-social-base</module>
 		<module>dream-social-common</module>
+		<module>dream-social-forum</module>
+		<module>dream-social-friend</module>
+		<module>dream-social-gateway</module>
+		<module>dream-social-mq</module>
+		<module>dream-social-search</module>
+		<module>dream-social-roast</module>
 		<module>dream-social-user</module>
+		<module>dream-social-web</module>
 	</modules>
 </project>

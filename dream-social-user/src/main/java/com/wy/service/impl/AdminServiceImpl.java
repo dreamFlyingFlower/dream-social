@@ -1,18 +1,17 @@
 package com.wy.service.impl;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.stereotype.Service;
-
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.wy.base.AbstractService;
+import com.wy.base.service.AbstractService;
 import com.wy.mapper.AdminMapper;
 import com.wy.model.Admin;
 import com.wy.service.AdminService;
 import com.wy.utils.IdWorker;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * 管理员业务实现类
@@ -47,7 +46,7 @@ public class AdminServiceImpl extends AbstractService<AdminMapper, Admin, Long> 
 
 	/**
 	 * 查询全部列表
-	 * 
+	 *
 	 * @return
 	 */
 	public List<Admin> findAll() {
@@ -56,7 +55,7 @@ public class AdminServiceImpl extends AbstractService<AdminMapper, Admin, Long> 
 
 	/**
 	 * 条件查询+分页
-	 * 
+	 *
 	 * @param user 查询参数
 	 * @return
 	 */
@@ -70,7 +69,7 @@ public class AdminServiceImpl extends AbstractService<AdminMapper, Admin, Long> 
 
 	/**
 	 * 条件查询
-	 * 
+	 *
 	 * @param whereMap
 	 * @return
 	 */
@@ -80,7 +79,7 @@ public class AdminServiceImpl extends AbstractService<AdminMapper, Admin, Long> 
 
 	/**
 	 * 根据ID查询实体
-	 * 
+	 *
 	 * @param id
 	 * @return
 	 */
@@ -90,7 +89,7 @@ public class AdminServiceImpl extends AbstractService<AdminMapper, Admin, Long> 
 
 	/**
 	 * 增加
-	 * 
+	 *
 	 * @param admin
 	 */
 	public void add(Admin admin) {
@@ -102,7 +101,7 @@ public class AdminServiceImpl extends AbstractService<AdminMapper, Admin, Long> 
 
 	/**
 	 * 修改
-	 * 
+	 *
 	 * @param admin
 	 */
 	public void update(Admin admin) {
@@ -111,7 +110,7 @@ public class AdminServiceImpl extends AbstractService<AdminMapper, Admin, Long> 
 
 	/**
 	 * 删除
-	 * 
+	 *
 	 * @param id
 	 */
 	public void deleteById(String id) {

@@ -1,6 +1,6 @@
 package com.wy.model;
 
-import com.wy.base.AbstractPager;
+import com.wy.base.model.AbstractPager;
 
 import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;

@@ -3,10 +3,10 @@ package com.wy.service;
 import java.util.List;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.extension.service.IService;
+import com.wy.base.service.BaseService;
 import com.wy.model.User;
 
-public interface UserService extends IService<User> {
+public interface UserService extends BaseService<User, Long> {
 
 	/**
 	 * 查询全部列表

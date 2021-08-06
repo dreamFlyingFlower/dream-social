@@ -1,6 +1,6 @@
 package com.wy.mapper;
 
-import com.wy.base.BaseMapper;
+import com.wy.base.mapper.BaseMapper;
 import com.wy.model.Admin;
 
 /**
@@ -12,5 +12,5 @@ import com.wy.model.Admin;
  */
 public interface AdminMapper extends BaseMapper<Admin, Long> {
 
-	public Admin findByLoginname(String loginname);
+	Admin findByLoginname(String loginname);
 }

@@ -1,29 +1,27 @@
 package com.wy.service.impl;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.TimeUnit;
-
-import javax.servlet.http.HttpServletRequest;
-
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.wy.mapper.UserMapper;
+import com.wy.model.User;
+import com.wy.service.UserService;
+import com.wy.base.service.AbstractService;
+import com.wy.collection.ListTool;
+import com.wy.result.ResultException;
+import com.wy.util.RandomTool;
+import com.wy.utils.IdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.wy.base.AbstractService;
-import com.wy.collection.ListTool;
-import com.wy.mapper.UserMapper;
-import com.wy.model.User;
-import com.wy.result.ResultException;
-import com.wy.service.UserService;
-import com.wy.util.RandomTool;
-import com.wy.utils.IdWorker;
+import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 用户业务实现类

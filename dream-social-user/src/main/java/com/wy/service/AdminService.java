@@ -1,10 +1,10 @@
 package com.wy.service;
 
-import java.util.List;
-
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.extension.service.IService;
+import com.wy.base.service.BaseService;
 import com.wy.model.Admin;
+
+import java.util.List;
 
 /**
  * 管理员业务层实现类
@@ -13,7 +13,7 @@ import com.wy.model.Admin;
  * @date 2021-07-30 13:41:28
  * @git {@link https://github.com/dreamFlyingFlower }
  */
-public interface AdminService extends IService<Admin> {
+public interface AdminService extends BaseService<Admin, Long> {
 
 	Admin login(Admin admin);
 

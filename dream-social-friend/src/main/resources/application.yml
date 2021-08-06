@@ -1,0 +1,29 @@
+server:
+  port: 50001
+
+spring:
+  application:
+    name: dream-social-friend
+  datasource:
+    url: jdbc:mysql://localhost:3306/social?autoReconnect=true&useUnicode=true&serverTimezone=GMT&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+  cloud:
+    nacos:
+      discovery:
+        # nacos服务地址
+        server-addr: 127.0.0.1:8848
+        # 给当前的服务命名
+        service: ${spring.application.name}
+        # 设置服务所处的分组
+#        group: DEFAULT_GROUP
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

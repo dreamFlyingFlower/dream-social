@@ -1,10 +1,5 @@
 package com.wy.model;
 
-import java.time.LocalDate;
-import java.util.Date;
-
-import com.wy.base.AbstractPager;
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
@@ -13,6 +8,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+import com.wy.base.model.AbstractPager;
 
 /**
  * 用户实体类 tb_user

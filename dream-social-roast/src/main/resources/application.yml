@@ -1,0 +1,16 @@
+server:
+  port: 50001
+
+spring:
+  application:
+    name: dream-social-roast
+  data:
+    mongodb:
+      host: 192.168.0.150
+      database: roast
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
